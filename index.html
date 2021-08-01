@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- You're looking at the source code, hm, cheater ! :-) -->
+<html>
+  <head>
+    <title>Oranges</title>
+    <script src="oranges.js"></script>
+    <script>
+    function hide(){
+    document.getElementById("explanation").style.display = "none";
+    }
+    function show(){
+    document.getElementById("explanation").style.display = "block";
+    }
+    </script>
+    <link rel="stylesheet" href="oranges.css">
+  </head>
+  <body onload="loadEvent(); hide();">
+    <center>
+      <div class="tileContainer" id="tileCont"></div>
+      <div class="circle" id="player"></div>
+      <br><br><br><br>
+      <div id="tileSelect"></div>
+      <input type="text" id="puzzleCode"><br>
+      <input type="button" id="getCodeButton" onclick="getPuzzle()" value="Get Puzzle">
+      <input type="button" id="lodeCodeButton" onclick="loadPuzzle()" value="Load Puzzle">
+      <br>
+      <a href="#" onclick="show()">Click Here to Learn How to Play!!!</a>
+      <br>
+      <div id="explanation">
+      <span style="color:red;">RED TILES ARE IMPASSIBLE! YOU CANNOT WALK ON THEM!</span> <br> <span style="color:yellow;">YELLOW TILES ARE ELECTRIC! THEY WILL ELECTROCUTE YOU!</span> <br> <span style="color:orange;">ORANGE-TILES ARE ORANGE-SCENTED. THEY WILL MAKE YOU SMELL DELICIOUS! </span><br><span style="color:blue;"> BLUE TILES ARE WATER TILES. SWIM THROUGH THEM IF YOU LIKE, BUT... IF YOU SMELL LIKE </span><span syle="color:orange;">ORANGES!</span><span style="color:blue;"> THE PIRANHAS WILL BITE YOU. ALSO, IF A BLUE TILE IS NEXT TO A, </span><span syle="color:yellow;">YELLOW TILE,</span><span style="color:blue;"> THE WATER WILL ALSO ZAP YOU!</span><br><span style="color:purple;"> PURPLE TILES ARE SLIPPERY! YOU WILL SLIDE TO THE NEXT TILE! HOWEVER, THE SLIPPERY SOAP... SMELLS LIKE LEMONS!! WHICH PIRAHNAS DO NOT LIKE! PURPLE AND </span><span style="color:blue;">BLUE</span><span style="color:purple;"> ARE OKAY!</span><br> <span style="color:green;">FINALLY,</span> PINK <span style="color:green;">TILES</span> AND <span style="color:green;">GREEN</span> TILES. <span style="color:green;">THEY</span> DON'T DO ANYTHING. STEP ON THEM ALL YOU LIKE.
+      </div>
+    </center>
+  </body>
+</html>

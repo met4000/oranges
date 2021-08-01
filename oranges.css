@@ -1,0 +1,22 @@
+.tileContainer {
+  position: relative;
+  border: 1px solid black;
+  display: inline-block;
+  line-height: 0;
+}
+.tileContainer .tile {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.circle {
+  z-index: 1;
+  width: 6px;
+  height: 6px;
+  position: relative;
+  display: inline-block;
+  border-radius: 9px;
+  border: 6px solid black;
+  background: #FFFFFF;
+  line-height: 0;
+}
